@@ -53,4 +53,3 @@ Now we can open the browser like this:
 cd ~/rustprojects/qvs20
 code .
 ```
-# wsl_open_vscode
