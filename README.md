@@ -1,5 +1,12 @@
 # wsl_open_vscode
 
+[comment]: # (auto_cargo_toml_to_md start)
+
+**Open folder in VSCode from WSL2 simply with `$ code .`**  
+***[repo](https://github.com/lucianobestia/dropbox_backup_to_external_disk/); version: 0.1.0  date: 2021-08-13 authors: Luciano Bestia***  
+
+[comment]: # (auto_cargo_toml_to_md end)
+
 Inside WSL2 I want to open a folder in VSCode. But VSCode is in Win10.  
 This is useful when navigating in the WSL2 Debian file system.  
 It used to work in WSL1 like this:  

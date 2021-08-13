@@ -44,6 +44,7 @@ fn print_help() {
 
 /// example how to call a list of shell commands
 fn task_build() {
+    cargo_auto_lib::auto_cargo_toml_to_md();
     #[rustfmt::skip]
     let shell_commands = [
         "echo $ cargo fmt", 

@@ -1,8 +1,9 @@
 [package]
 name = "wsl_open_vscode"
 version = "0.1.0"
-authors = ["Luciano Bestia <LucianoBestia@gmail.com>"]
-description = "Open folder in VSCode from WSL2 simply with `code .`"
+authors = ["Luciano Bestia"]
+description = "Open folder in VSCode from WSL2 simply with `$ code .`"
+repository = "https://github.com/lucianobestia/dropbox_backup_to_external_disk/"
 edition = "2018"
 publish = false
 
