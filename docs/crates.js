@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["wsl_open_vscode"];
