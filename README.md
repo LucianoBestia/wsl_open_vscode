@@ -27,7 +27,7 @@ I will transform the `.` into the Linux path for the `env::current_dir()`.
 ## Development
 
 This is a simple binary. For good habit I separated the lib from the bin.  
-To build and run with parameters use this:  
+To build use this:  
 
 ```bash
 cargo build --release
