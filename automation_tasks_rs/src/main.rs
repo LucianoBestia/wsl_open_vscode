@@ -47,6 +47,8 @@ fn print_help() {
 /// example how to call a list of shell commands
 fn task_build() {
     cargo_auto_lib::auto_cargo_toml_to_md();
+    cargo_auto_lib::auto_lines_of_code("");
+    
     #[rustfmt::skip]
     let shell_commands = [
         "echo $ cargo fmt", 
@@ -58,10 +60,13 @@ fn task_build() {
 
 /// example how to call one shell command and combine with rust code
 fn task_release() {
+    
     // semver is used for libraries, version_from_date is used for binary
     //cargo_auto_lib::auto_semver_increment_patch();
     cargo_auto_lib::auto_version_from_date();
     cargo_auto_lib::auto_cargo_toml_to_md();
+    cargo_auto_lib::auto_lines_of_code("");
+
     println!("$ cargo fmt");
     run_shell_command("cargo fmt");
     println!("$ cargo build --release");
@@ -75,8 +80,8 @@ fn task_increment_minor() {
 }
 
 /// example how to call a list of shell commands and combine with rust code
-fn task_docs() {
-    cargo_auto_lib::auto_md_to_doc_comments();    
+fn task_docs() {    
+    cargo_auto_lib::auto_md_to_doc_comments();        
     #[rustfmt::skip]
     let shell_commands = [
         "echo $ cargo doc --no-deps --document-private-items",

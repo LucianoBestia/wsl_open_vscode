@@ -9,6 +9,15 @@
 
 [comment]: # (auto_cargo_toml_to_md end)
 
+[comment]: # (auto_lines_of_code start)
+[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-27-green.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-59-blue.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+[![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-9-purple.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+[![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+[![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+
+[comment]: # (auto_lines_of_code end)
+
 Inside WSL2 I want to open a folder in VSCode. But VSCode is in Win10.  
 This is useful when navigating in the WSL2 Debian file system.  
 It used to work in WSL1 like this:  
