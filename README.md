@@ -5,7 +5,7 @@
 [comment]: # (auto_cargo_toml_to_md start)
 
 **Open folder in VSCode from WSL2 simply with `$ code .`**  
-***[repo](https://github.com/lucianobestia/dropbox_backup_to_external_disk/); version: 0.1.1  date: 2021-08-14 authors: Luciano Bestia***  
+***[repo](https://github.com/lucianobestia/dropbox_backup_to_external_disk/); version: 2021.814.1238  date: 2021-08-14 authors: Luciano Bestia***  
 
 [comment]: # (auto_cargo_toml_to_md end)
 
