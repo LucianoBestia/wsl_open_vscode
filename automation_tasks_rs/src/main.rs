@@ -1,4 +1,3 @@
-
 /// automation_tasks_rs basic
 fn main() {
     if is_not_run_in_rust_project_root_directory() {
@@ -21,6 +20,8 @@ fn main() {
                 task_build();
             } else if &task == "release" || &task == "r" {
                 task_release();
+            } else if &task == "increment_minor" {
+                task_increment_minor();                
             } else if &task == "docs" || &task == "doc" || &task == "d" {
                 task_docs();
             } else {
@@ -37,6 +38,7 @@ fn print_help() {
     println!("User defined tasks in automation_tasks_rs:");
     println!("cargo auto build - builds the crate in debug mode");
     println!("cargo auto release - builds the crate in release mode");
+    println!("cargo auto increment_minor - increments the semver version minor part (only for libraries)");
     println!("cargo auto docs - builds the docs");
 }
 
@@ -56,14 +58,25 @@ fn task_build() {
 
 /// example how to call one shell command and combine with rust code
 fn task_release() {
+    // semver is used for libraries, version_from_date is used for binary
+    //cargo_auto_lib::auto_semver_increment_patch();
+    cargo_auto_lib::auto_version_from_date();
+    cargo_auto_lib::auto_cargo_toml_to_md();
     println!("$ cargo fmt");
     run_shell_command("cargo fmt");
     println!("$ cargo build --release");
     run_shell_command("cargo build --release");
 }
 
+/// semver is used for libraries, version_from_date is used for binary
+fn task_increment_minor() {
+    cargo_auto_lib::auto_semver_increment_minor();
+    cargo_auto_lib::auto_cargo_toml_to_md();
+}
+
 /// example how to call a list of shell commands and combine with rust code
 fn task_docs() {
+    cargo_auto_lib::auto_md_to_doc_comments();    
     #[rustfmt::skip]
     let shell_commands = [
         "echo $ cargo doc --no-deps --document-private-items",
