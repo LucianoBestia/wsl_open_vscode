@@ -8,7 +8,8 @@ fn main() {
         // early exit
         std::process::exit(0);
     }
-
+    
+    // get CLI arguments
     let mut args = std::env::args();
     // the zero argument is the name of the program
     let _arg_0 = args.next();
@@ -17,7 +18,7 @@ fn main() {
     match arg_1 {
         None => print_help(),
         Some(task) => {            
-            println!("Running auto task: {}", &task);
+            println!("Running automation_tasks_rs: {}", &task);
             // region: call task functions for the task argument
             if &task == "build" || &task == "b" {
                 task_build();
@@ -39,11 +40,12 @@ fn main() {
 /// write a comprehensible help for user defined tasks
 fn print_help() {
     println!("User defined tasks in automation_tasks_rs:");
-    println!("cargo auto build - builds the crate in debug mode");
-    println!("cargo auto release - builds the crate in release mode");
+    println!("cargo auto build - builds the crate in debug mode, fmt");
+    println!("cargo auto release - builds the crate in release mode, version from date, fmt");
     println!("cargo auto increment_minor - increments the semver version minor part (only for libraries)");
-    println!("cargo auto docs - builds the docs");
+    println!("cargo auto docs - builds the docs, copy to docs directory");
 }
+
 
 // region: tasks
 
@@ -111,5 +113,4 @@ fn is_not_run_in_rust_project_root_directory() -> bool {
 }
 
 // endregion: helper functions
-
     
