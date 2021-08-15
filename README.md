@@ -5,12 +5,12 @@
 [comment]: # (auto_cargo_toml_to_md start)
 
 **Open folder in VSCode from WSL2 simply with `$ code .`**  
-***[repo](https://github.com/lucianobestia/dropbox_backup_to_external_disk/); version: 2021.814.1238  date: 2021-08-14 authors: Luciano Bestia***  
+***[repository](https://github.com/lucianobestia/dropbox_backup_to_external_disk/); version: 2021.815.1030  date: 2021-08-15 authors: Luciano Bestia***  
 
 [comment]: # (auto_cargo_toml_to_md end)
 
 [comment]: # (auto_lines_of_code start)
-[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-27-green.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
+[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-28-green.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
 [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-59-blue.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
 [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-9-purple.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
 [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/wsl_open_vscode/)
