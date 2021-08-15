@@ -13,15 +13,33 @@ code .
 
 but it does not work anymore in WSL2.  
 
-## Open folder in Win10 VSCode
+## Symbolic link
 
 I will prepare a symbolic link to the `VSCode_Path\bin\code` file in windows.
-This is a shebang file for Linux.
+This is a shebang file for Linux prepared for VSCode.
 
 ```bash
 sudo ln -sf "/mnt/c/Users/Luciano/AppData/Local/Programs/Microsoft VS Code/bin/code" /usr/bin/code
-# now I can open a folder like this
+```
+
+Now I can open a folder like this:
+
+```bash
 cd ~/rustprojects/qvs20
 code .
 ```
 
+## from windows
+
+I use the TotalCommander file manager in windows.  
+When I am inside a Linux folder, I can open it in the terminal with
+
+```powershell
+wsl
+```
+
+Then in the Linux terminal I run:
+
+```bash
+code .
+```
