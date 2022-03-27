@@ -1,7 +1,7 @@
 # wsl_open_vscode
 
 **Open folder in VSCode from WSL2 simply with `$ code .`**  
-***[repository](https://github.com/lucianobestia/wsl_open_vscode/); version: 2021.815.1030  date: 2021-08-15 authors: Luciano Bestia***  
+***version: 2021.815.1030  date: 2021-08-15 author: [dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/wsl_open_vscode)***  
 
 Inside WSL2 I want to open a folder in VSCode. But VSCode is in Win10.  
 This is useful when navigating in the WSL2 Debian file system.  
