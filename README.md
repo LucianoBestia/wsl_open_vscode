@@ -3,6 +3,9 @@
 **Open folder in VSCode from WSL2 simply with $ code .**  
 ***version: 2021.815.1030  date: 2021-08-15 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/wsl_open_vscode)***  
 
+![status](https://img.shields.io/badge/obsolete-red) 
+![status](https://img.shields.io/badge/archived-red) 
+![status](https://img.shields.io/badge/tutorial-yellow) 
 ![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/461901148.svg)
 
 Hashtags: #rustlang #tutorial  
